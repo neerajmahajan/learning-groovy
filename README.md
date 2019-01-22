@@ -1,4 +1,4 @@
-# learning-groovy
+### learning-groovy - http://docs.groovy-lang.org/latest/html/documentation/
 
 #### Intro
 
@@ -84,7 +84,7 @@ assert 7 == x + y +1
    * anotherJavaString.getClass().getName() will return java.lang.String
  * def groovyString = "this is Groovy string ${1 + 1}"
    * groovyString.getClass().getName() will return org.codehaus.groovy.runtime.GStringImpl
-###### Operator Overloading (+, - , *, [] internally called getAt method of string)
+###### Operator Overloading (+, - , *, [] internally called getAt method of string, == internally called equals method)
 * - will remove first occurence of passed string
 * * will repeat and concat the string x times.
 ```
@@ -110,3 +110,11 @@ hahahahah'''
 def textAreaString = """Hi This is multiline string
 hahahahah ${1 + 1}"""
 ```
+* Slashy String (used for regex expression, see https://docs.oracle.com/javase/tutorial/essential/regex/pre_char_classes.html)
+def fooPatern = /.*foo.*/
+assert fooPattern == '.*foo.*'
+
+def testString = 'Hello , regex !'.toLowerCase.replaceAll(/\W/,'') ``` \W looks for non [a-zA-Z0-0_]
+assert testString == 'helloregex'
+
+
