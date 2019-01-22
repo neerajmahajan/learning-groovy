@@ -84,7 +84,7 @@ assert 7 == x + y +1
    * anotherJavaString.getClass().getName() will return java.lang.String
  * def groovyString = "this is Groovy string ${1 + 1}"
    * groovyString.getClass().getName() will return org.codehaus.groovy.runtime.GStringImpl
-###### Operator Overloading (+, - , *)
+###### Operator Overloading (+, - , *, [] internally called getAt method of string)
 * - will remove first occurence of passed string
 * * will repeat and concat the string x times.
 ```
@@ -99,4 +99,14 @@ def s = 'this is all'
   s[-3..-1] will give 'all'
   s[-1..-3] will give 'lla'
   s[0..3,5..6.8..-1] will give 'thisisall'
+```
+* Multiline String
+```
+def textAreaString = '''Hi This is multiline string
+hahahahah'''
+```
+
+```
+def textAreaString = """Hi This is multiline string
+hahahahah ${1 + 1}"""
 ```
