@@ -120,3 +120,33 @@ assert testString == 'helloregex'
 ```
  * Using tilde on a slashy string converts it inotRegex Pattern
  * assert ~/abcd/ instanceof java.util.regex.Pattern
+##### POGO (POJO in Java, POPO in Python)
+```
+class Person {
+ String first
+ String last
+}
+
+
+Person p = new Person()
+p.setFirst('Neeraj')
+p.last = 'Mahajan'
+println "${p.getFirst()} ${p.last}"
+```
+###### Key points
+* By default class is public.
+* By default methods are public.
+* By default attribute(instance variables) are private.
+* If we don't specify private or public on attributes, Groovy by default generates setter and getters.
+* When we assign object.attribute(p.last = 'Mahajan') then it internally called setter method.
+* When we access object.attribute(p.last) then it internally called getter method.
+* In Groovy, we can call the constructor with map of key:value **(Json object)** then it will internally create a class and initialize the instance variables. eg ``` Person p = new Person(first:'Neeraj',last:'Mahajan') ```
+* In groovy method, last evaluate expression is retured. We don't need an explicit **return** keyword.
+* **import groovy.transform**
+  * @ToString : automatically provide toString method implementation. default format ``` className(comma separated instance variable values).
+  * @ToString(includeName=true) : chages the default format to ``` className(comma separated key:value )```.
+  * @EqualsAndHashCode : provide equals and hasCode method implementation based on all instance variables comparison.
+  * @TupleConstructor : generate constructors (constructor values will be injected in the order of declaration on instance variables).
+  * @Canonical : Wrapper for all above annotations.
+
+
