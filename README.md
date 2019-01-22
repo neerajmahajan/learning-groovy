@@ -10,7 +10,21 @@
   * Hybrid languages - compile to bytecode
     * JRuby
     * Jython
-##### Installation
+##### Installation (java should be pre-installed)
 * Zip file
 * Installer
 * Groovy environment manager (gvm) - support installing multiple version of technology stack (groovy, grail,gradle,griffin etc)
+
+##### Running groovy
+* groovyc
+* groovy
+* groovy shell
+* Executing groovy without compiling it
+
+###### Programming structure
+
+* Everything is object oriented
+* semicolon are optional.
+* can mix java code.
+* println("Hello World");
+* paranthesis are optional eg ``` println "Hello World" ``` will work
