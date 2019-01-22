@@ -71,17 +71,32 @@ assert 7 == x + y +1
       println x.getClass().getName()
  * If we have declared the variable with def, then we can change the value of different data types.
  
- ##### Data Types
- 
+ ##### Data Types 
  * Everything is an Object in groovy
  * eg 3.getClass().getName() will return java.lang.Integer ,(3.5).getClass().getName() will return java.math.BigDecimal
  * By default groovy uses high precision data types eg 3.5 is BigDecimal by default instead of float.
  * When we use operators on numeric type, groovy internally invokes corresponding methods in API.(Operator overloading)
   * 2.0 - 1.1 is same as 2.0.minus(1.1)
- ###### Strings
+ ###### Strings vs Java String
  * def javaString = 'this is a string'
    * javaString.getClass().getName() will return java.lang.String
  * def anotherJavaString = "this is another Java String"
    * anotherJavaString.getClass().getName() will return java.lang.String
  * def groovyString = "this is Groovy string ${1 + 1}"
    * groovyString.getClass().getName() will return org.codehaus.groovy.runtime.GStringImpl
+###### Operator Overloading (+, - , *)
+* - will remove first occurence of passed string
+* * will repeat and concat the string x times.
+```
+def s = 'this is all'
+  s -  'is'  will return  'th is all'
+  s * 2 will return 'this is allthis is all'
+  s[0] will give t
+  s[-1] will give l
+  s[-2] will give l
+  s[-3] will give a
+  s[0..3] will give 'this' from and to are both inclusive
+  s[-3..-1] will give 'all'
+  s[-1..-3] will give 'lla'
+  s[0..3,5..6.8..-1] will give 'thisisall'
+```
