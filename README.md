@@ -64,3 +64,9 @@ assert 7 == x + y +1
    * java.math.BigDecimal
    * groovy.lang.*
    * groovy.util.*
+
+* def Keyword (dynamic typing similar to var in javascript)
+ * We use def when we don't want to specify datatype or datatype is not known.
+ * eg def x =1
+      println x.getClass().getName()
+ * If we have declared the variable with def, then we can change the value of different data types.
