@@ -30,7 +30,8 @@
 * paranthesis are optional eg ``` println "Hello World" ``` will work and ``` println 'Hello World' ``` will also work. note single quotes
 * String can be put in single quotes or double quotes
   * "" can be used for evaluating strings expression, where as '' are normal java type strings.
-  * ``` void sayHello(String name) {     
+  * ```
+      void sayHello(String name) {     
       println "Hello, ${name}"
       println('Hello World');
     }
