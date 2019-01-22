@@ -79,4 +79,9 @@ assert 7 == x + y +1
  * When we use operators on numeric type, groovy internally invokes corresponding methods in API.(Operator overloading)
   * 2.0 - 1.1 is same as 2.0.minus(1.1)
  ###### Strings
- *
+ * def javaString = 'this is a string'
+   * javaString.getClass().getName() will return java.lang.String
+ * def anotherJavaString = "this is another Java String"
+   * anotherJavaString.getClass().getName() will return java.lang.String
+ * def groovyString = "this is Groovy string ${1 + 1}"
+   * groovyString.getClass().getName() will return org.codehaus.groovy.runtime.GStringImpl
