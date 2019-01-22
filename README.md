@@ -53,3 +53,14 @@ int x = 3
 int y = 4
 assert 7 == x + y +1
 ```
+
+* Import
+ * Groovy has lot of automatic imports which includes
+   * java.lang.*
+   * java.util.*
+   * java.net.*
+   * java.io.*
+   * java.math.BigInteger
+   * java.math.BigDecimal
+   * groovy.lang.*
+   * groovy.util.*
