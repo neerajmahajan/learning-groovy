@@ -45,4 +45,11 @@
  * any variable created in script become local variable in main method
  * before executing groovy script from java add groovy to classpath
    * java -cp $GROOVY_HOME/embeddable/groovy-all-2.4.3.jar:. hello_world ?? find how it works in 2.5.5
-*
+##### Asserts, imports and def
+
+* Assert 
+```
+int x = 3
+int y = 4
+assert 7 == x + y +1
+```
