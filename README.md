@@ -138,6 +138,7 @@ println "${p.getFirst()} ${p.last}"
 * By default methods are public.
 * By default attribute(instance variables) are private.
 * If we don't specify private or public on attributes, Groovy by default generates setter and getters.
+* If we want groovy not to provide setters, then make it final.
 * When we assign object.attribute(p.last = 'Mahajan') then it internally called setter method.
 * When we access object.attribute(p.last) then it internally called getter method.
 * In Groovy, we can call the constructor with map of key:value **(Json object)** then it will internally create a class and initialize the instance variables. eg ``` Person p = new Person(first:'Neeraj',last:'Mahajan') ```
