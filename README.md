@@ -118,3 +118,5 @@ assert fooPattern == '.*foo.*'
 def testString = 'Hello , regex !'.toLowerCase.replaceAll(/\W/,'')  ``` \W looks for non [a-zA-Z0-0_] ```
 assert testString == 'helloregex'
 ```
+ * Using tilde on a slashy string converts it inotRegex Pattern
+ * assert ~/abcd/ instanceof java.util.regex.Pattern
