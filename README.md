@@ -27,4 +27,11 @@
 * semicolon are optional.
 * can mix java code.
 * println("Hello World");
-* paranthesis are optional eg ``` println "Hello World" ``` will work
+* paranthesis are optional eg ``` println "Hello World" ``` will work and ``` println 'Hello World' ``` will also work. note single quotes
+* String can be put in single quotes or double quotes
+  * "" can be used for evaluating strings expression, where as '' are normal java type strings.
+  * ``` void sayHello(String name) {     
+      println "Hello, ${name}"
+      println('Hello World');
+    }
+    ```
