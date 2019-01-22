@@ -70,3 +70,13 @@ assert 7 == x + y +1
  * eg def x =1
       println x.getClass().getName()
  * If we have declared the variable with def, then we can change the value of different data types.
+ 
+ ##### Data Types
+ 
+ * Everything is an Object in groovy
+ * eg 3.getClass().getName() will return java.lang.Integer ,(3.5).getClass().getName() will return java.math.BigDecimal
+ * By default groovy uses high precision data types eg 3.5 is BigDecimal by default instead of float.
+ * When we use operators on numeric type, groovy internally invokes corresponding methods in API.(Operator overloading)
+  * 2.0 - 1.1 is same as 2.0.minus(1.1)
+ ###### Strings
+ *
