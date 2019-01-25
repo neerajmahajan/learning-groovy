@@ -150,4 +150,17 @@ println "${p.getFirst()} ${p.last}"
   * @TupleConstructor : generate constructors (constructor values will be injected in the order of declaration on instance variables).
   * @Canonical : Wrapper for all above annotations.
 
+##### Collections
+###### Range
+```
+Range r = 1..10
+println "$r"           //[1,2,3,4,5,6,7,8,9,10]
+println r.from         // 1
+println r.to           // 2
+println r.contains(5)  // true
+r = 1..<10
+println "$r"           [1,2,3,4,5,6,7,8,9]
+```
+###### List
+
 
