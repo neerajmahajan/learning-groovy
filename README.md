@@ -176,3 +176,14 @@ println nums                                         // [7, 1, 2, 7, 77, [13, 14
 [1,2,[3,4,5],[6,7],[8,9,10,11,[12,13],14]].flatten() //  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]                                
 
 ```
+
+###### Set
+```
+def map = ['a':1,b:2,c:3]              // 
+println map                            //[a:1,b:2,c:3]
+map.put('d',4);                        //
+map['e'] =5;                           //
+map.f = 6;                             //
+println map                            //[a:1,b:2,c:3,d:4,e:5,f:6]
+println map.getClass().getName()       // java.util.LinkedHashMap
+```
