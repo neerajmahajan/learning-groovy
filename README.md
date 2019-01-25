@@ -173,7 +173,12 @@ println nums + [11,12]  !! Create a new list         // [7, 1, 2, 7, 77, 11, 12]
 println nums                                         // [7, 1, 2, 7, 77]
 nums << [13,14]         !! Appends to list                               
 println nums                                         // [7, 1, 2, 7, 77, [13, 14]]
-[1,2,[3,4,5],[6,7],[8,9,10,11,[12,13],14]].flatten() //  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]                                
+[1,2,[3,4,5],[6,7],[8,9,10,11,[12,13],14]].flatten() //  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]           
+
+
+def nums = [1,2,3,4] as LinkedList     
+println nums                                         // [1,2,3,4]
+println nums.class.name                              // java.util.LinkedList
 
 ```
 
