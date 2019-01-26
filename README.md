@@ -249,3 +249,10 @@ println key
 println value
 }
 ```
+```
+10.downto(8,{print it})           // 1098
+println ''
+10.downto(5){print it}            // 1098 ///// Widely USED
+println ''
+10.downto 5, {print it}           // 1098
+```
