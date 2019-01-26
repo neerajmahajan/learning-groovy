@@ -182,7 +182,7 @@ println nums.class.name                              // java.util.LinkedList
 
 ```
 
-###### Set
+###### Map
 ```
 def map = ['a':1,b:2,c:3]              // 
 println map                            //[a:1,b:2,c:3]
@@ -191,4 +191,27 @@ map['e'] =5;                           //
 map.f = 6;                             //
 println map                            //[a:1,b:2,c:3,d:4,e:5,f:6]
 println map.getClass().getName()       // java.util.LinkedHashMap
+```
+
+###### Set
+
+```
+def set = [1,1,1,1,1,2,3,4,5] as Set
+println set                                               // [1, 2, 3, 4, 5]
+println set.class.name                                    // java.util.LinkedHashSet
+def sortedSet = [8,9,6,2,1,1,1,1,1,2,3,4,5] as SortedSet
+println sortedSet                                         // [1, 2, 3, 4, 5, 6, 8, 9]
+println sortedSet.class.name                              // java.util.TreeSet
+```
+
+```
+def stringsArray = 'this is a array of strings'.split()
+
+println stringsArray                       // [this, is, a, array, of, strings]
+println stringsArray.class.name            // [Ljava.lang.String;
+
+def stringsList = 'this is a list of strings'.split() as List
+
+println stringsList                        // [this, is, a, list, of, strings]
+println stringsList.class.name             //  java.util.ArrayList
 ```
