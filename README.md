@@ -211,6 +211,7 @@ println stringsArray                       // [this, is, a, array, of, strings]
 println stringsArray.class.name            // [Ljava.lang.String;
 
 def stringsList = 'this is a list of strings'.split() as List
+List stringsListAnotherWay = 'this is a list of strings'.split()
 
 println stringsList                        // [this, is, a, list, of, strings]
 println stringsList.class.name             //  java.util.ArrayList
