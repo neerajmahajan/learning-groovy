@@ -220,3 +220,14 @@ List<Integer> listIntegers = [1,2,3,4,'abc']
 println listIntegers                            // [1, 2, 3, 4, abc]
 
 ```
+
+###### Closures
+
+```
+def list = [1,2,3,4,5,6]
+
+list.each {println it}
+list.each {n -> println n }
+
+
+```
