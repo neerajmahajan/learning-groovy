@@ -221,7 +221,7 @@ println listIntegers                            // [1, 2, 3, 4, abc]
 
 ```
 
-###### Closures
+###### Closures : Closure is a body of code surrounded by braces{}. Inside braces, left site has arguments and right side has body
 
 ```
 def list = [1,2,3,4,5,6]
@@ -229,5 +229,23 @@ def list = [1,2,3,4,5,6]
 list.each {println it}
 list.each {n -> println n }
 
+list.eachWithIndex { x, index ->
+println x
+println "index $index"
+}
+```
+```
+def map = [a:1,b:2,c:3]
 
+map.each { e ->
+
+println e.key
+println e.value
+}
+
+map.each { key,value ->
+
+println key
+println value
+}
 ```
