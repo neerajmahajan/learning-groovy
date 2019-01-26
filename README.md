@@ -256,3 +256,22 @@ println ''
 println ''
 10.downto 5, {print it}           // 1098
 ```
+
+###### MAP(collect in groovy) -   FILTER(findAll)  - Reduce
+```
+def list = [1,2,3,4,5,6]
+
+list.collect {it*2}        //map
+    .findAll {it%3==0}     // filter
+    .sum()                 // reduce
+    
+    
+def list = ['a','bb','ccc']
+println list*.size()     // [1,2,3]             // SHORCUT for collect
+
+
+
+def map = [a:1,b:2,c:3]
+map.collect {k,v -> "$k=$v"}       // [a=1,b=2,c=3]
+.join('$')                         // a=1$b=2$c=3
+```
