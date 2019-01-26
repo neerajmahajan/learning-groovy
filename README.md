@@ -215,4 +215,8 @@ List stringsListAnotherWay = 'this is a list of strings'.split()
 
 println stringsList                        // [this, is, a, list, of, strings]
 println stringsList.class.name             //  java.util.ArrayList
+
+List<Integer> listIntegers = [1,2,3,4,'abc']
+println listIntegers                            // [1, 2, 3, 4, abc]
+
 ```
